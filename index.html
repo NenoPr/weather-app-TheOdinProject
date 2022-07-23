@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="javascript.js" defer></script>
-    <link type="image/png" sizes="32x32" rel="icon" href="/favicon.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="favicon.png">
     <title>Weather App Project</title>
 </head>
 <body>
@@ -15,12 +15,17 @@
 
         <div id="search-container">
             <input type="search" id="weather-search" placeholder="Enter Location...">
-            <button style="padding: 1rem; cursor: pointer;" id="fetch-new-weather">Fetch New Weather</button>
+            <button id="fetch-new-weather">Fetch New Weather</button>
+            <div id="toggle-degrees">°C</div>
             <div id="loading-animation"></div>
         </div>
         
         <div id="today-weather-info-card">
             <div id="location"></div>
+            <div id="local-time">
+                <div id="local-time-label"></div>
+                <div id="local-time-data"></div>
+            </div>
             <div id="temperature"></div>
             <div id="weather-state">
                 <div id="weather-state-label"></div>
