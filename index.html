@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="javascript.js" defer></script>
+    <link type="image/png" sizes="32x32" rel="icon" href="/favicon.png">
+    <title>Weather App Project</title>
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="search-container">
+            <input type="search" id="weather-search" placeholder="Enter Location...">
+            <button style="padding: 1rem; cursor: pointer;" id="fetch-new-weather">Fetch New Weather</button>
+            <div id="loading-animation"></div>
+        </div>
+        
+        <div id="today-weather-info-card">
+            <div id="location"></div>
+            <div id="temperature"></div>
+            <div id="weather-state">
+                <div id="weather-state-label"></div>
+                <img id="weather-state-image"></img>
+            </div>
+            <div id="feels-like"></div>
+            <div id="im-a-line"></div>
+            <div id="max-temp">
+                <div id="max-label"></div>
+                <div id="max-data"></div>
+            </div>
+            <div id="min-temp">
+                <div id="min-label"></div>
+                <div id="min-data"></div>
+            </div>
+            <div id="wind">
+                <div id="wind-label"></div>
+                <div id="wind-data"></div>
+            </div>
+            <div id="humidity">
+                <div id="humidity-label"></div>
+                <div id="humidity-data"></div>
+            </div>
+            <!-- <div id="visibility"></div>
+            <div id="pressure"></div> -->
+        </div>
+        
+        <div id="daily-hourly-cards">
+            <div id="daily">
+                <div id="daily-weather-info-card">
+                    <div class="daily-day"></div>
+                    <div class="temperature"></div>
+                    <div class="min-temp"></div>
+                    <div class="weather-state"></div>
+                    <div class="weather-state-icon"></div>
+                </div>
+            </div>
+            <div id="hourly">
+                <div id="hourly-weather-info-card">
+                    <div class="hourly-time"></div>
+                    <div class="temperature"></div>
+                    <div class="weather-state"></div>
+                    <div class="weather-state-icon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
