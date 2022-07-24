@@ -16,7 +16,15 @@ toggleDegrees.addEventListener("click", (pointer) => {
         document.getElementById("temperature").innerText = `${fahrenheit}°F`
         document.getElementById("feels-like").innerText = `Feels like ${fahrenheit}°F`
 
-        //Update the elements to °F
+        celsius = document.getElementById("max-data").innerText.replace("°C","")
+        fahrenheit = Math.round((celsius * 9 / 5) + 32)
+        document.getElementById("max-data").innerText = `${fahrenheit}°C`
+
+        celsius = document.getElementById("min-data").innerText.replace("°C","")
+        fahrenheit = Math.round((celsius * 9 / 5) + 32)
+        document.getElementById("min-data").innerText = `${fahrenheit}°C`
+
+        // Rerender the labels to say °F
         document.getElementById("max-data").innerText = document.getElementById("max-data").innerText.replace("°C","°F")
         document.getElementById("min-data").innerText = document.getElementById("min-data").innerText.replace("°C","°F")
 
@@ -40,8 +48,15 @@ toggleDegrees.addEventListener("click", (pointer) => {
         document.getElementById("temperature").innerText = `${celsius}°C`
         document.getElementById("feels-like").innerText = `Feels like ${celsius}°C`
 
-        // Recalculate and rerender kmh-label
-        document.getElementById("feels-like").innerText = document.getElementById("feels-like").innerText.replace("°F","°C")
+        fahrenheit = document.getElementById("max-data").innerText.replace("°F","")
+        celsius = Math.round((fahrenheit - 32) * 5 / 9)
+        document.getElementById("max-data").innerText = `${celsius}°C`
+
+        fahrenheit = document.getElementById("min-data").innerText.replace("°F","")
+        celsius = Math.round((fahrenheit - 32) * 5 / 9)
+        document.getElementById("min-data").innerText = `${celsius}°C`
+
+        // Rerender the labels to say °C
         document.getElementById("max-data").innerText = document.getElementById("max-data").innerText.replace("°F","°C")
         document.getElementById("min-data").innerText = document.getElementById("min-data").innerText.replace("°F","°C")
 
