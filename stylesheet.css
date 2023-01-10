@@ -11,7 +11,6 @@ html, body {
     display: grid;
     grid-template: auto 2fr 1fr / 1fr 1fr;
     align-content: space-between;
-    background-image: url("https://wallake.org/uploads/posts/2021-09/1633013401_645-1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
